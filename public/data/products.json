@@ -20,7 +20,7 @@
     "name": "Gaming Laptop",
     "price": 1299.99,
     "image": "/images/laptop.jpg",
-    "description": "A powerful gaming laptop with a high-refresh-rate display and dedicated graphics card.",
+    "description": "A powerful gaming laptop with a high-refresh display and graphics card.",
     "blurDataUrl": "LEET*gK~0gzq1br?o3WD01rX~APA"
   },
   {
@@ -38,5 +38,37 @@
     "image": "/images/speaker.jpg",
     "description": "A portable Bluetooth speaker with deep bass and water resistance.",
     "blurDataUrl": "LHH_=QIS~q-C19X5E1$*%ikW4.so"
+  },
+  {
+    "id": 6,
+    "name": "Mechanical Keyboard",
+    "price": 89.99,
+    "image": "/images/keyboard.jpg",
+    "description": "A mechanical keyboard with RGB lighting and fast responsive switches.",
+    "blurDataUrl": "LYG8.nx]4.xa~q%MM{RjRj%2xaNG"
+  },
+  {
+    "id": 7,
+    "name": "4K Monitor",
+    "price": 349.99,
+    "image": "/images/monitor.jpg",
+    "description": "A stunning 4K monitor with ultra-wide display and vibrant colors.",
+    "blurDataUrl": "LXFfhCF.RNI_kvshnMWb1*#ksjoO"
+  },
+  {
+    "id": 8,
+    "name": "Gaming Mouse",
+    "price": 49.99,
+    "image": "/images/mouse.jpg",
+    "description": "An ergonomic gaming mouse with programmable buttons.",
+    "blurDataUrl": "L27dwZ00_4D$xt%gD$RjD%?bt7D*"
+  },
+  {
+    "id": 9,
+    "name": "External SSD",
+    "price": 129.99,
+    "image": "/images/ssd.jpg",
+    "description": "A high-speed external SSD with large storage and USB-C support.",
+    "blurDataUrl": "LBB3+=oz00%M.8E1I9-;00n%_NW;"
   }
 ]
