@@ -28,9 +28,14 @@ export default function Home() {
             className="bg-gray-100 p-4 rounded-md space-y-2 group"
           >
             <div className="overflow-hidden rounded-md">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={300}
+                height={300}
+                quality={80}
+                placeholder="blur"
+                blurDataURL={product.blurDataUrl}
                 className="w-full h-40 object-cover group-hover:scale-105 transition-all duration-300"
               />
             </div>
