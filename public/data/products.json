@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone XYZ",
+    "price": 499.99,
+    "image": "/images/smartphone.jpg",
+    "description": "A high-quality smartphone with amazing features and awesome camera."
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphone",
+    "price": 99.99,
+    "image": "/images/headphone.jpg",
+    "description": "Noise-canceling wireless headphones with long battery life."
+  },
+  {
+    "id": 3,
+    "name": "Gaming Laptop",
+    "price": 1299.99,
+    "image": "/images/laptop.jpg",
+    "description": "A powerful gaming laptop with a high-refresh-rate display and dedicated graphics card."
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch Pro",
+    "price": 199.99,
+    "image": "/images/smartwatch.jpg",
+    "description": "A stylish smartwatch with health tracking and long battery life."
+  },
+  {
+    "id": 5,
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "image": "/images/speaker.jpg",
+    "description": "A portable Bluetooth speaker with deep bass and water resistance."
+  }
+]
