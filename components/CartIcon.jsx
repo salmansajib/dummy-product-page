@@ -11,11 +11,11 @@ function CartIcon() {
   );
   return (
     <div className="relative">
-      <ShoppingCart className="cursor-pointer" size={32} />
+      <ShoppingCart className="cursor-pointer" color="#111827" size={32} />
       {totalItems > 0 && (
         <span
           className={`${
-            totalItems > 10 ? "size-8" : "size-6"
+            totalItems > 10 ? "size-7" : "size-6"
           } absolute -top-4 -right-2 bg-gray-900 text-gray-50 text-[14px] font-semibold flex items-center justify-center rounded-full`}
         >
           {totalItems > 10 ? "10+" : totalItems}
