@@ -5,11 +5,38 @@ import { useProducts } from "@/hooks/useProducts";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/cartSlice";
 import { ThreeDots } from "react-loader-spinner";
+import { toast } from "react-toastify";
 
 function Products() {
   const dispatch = useDispatch();
 
   const { data: products, error, isError, isLoading } = useProducts();
+
+  const handleAddToCart = (product) => {
+    try {
+      dispatch(addToCart(product));
+
+      toast.success(`${product.name} added to cart!`, {
+        position: "top-right",
+        autoClose: 2000,
+        ariaLive: "polite",
+        draggable: true,
+        closeButton: true,
+        hideProgressBar: false,
+      });
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+
+      toast.error("Failed to add product to cart. Please try again.", {
+        position: "top-right",
+        autoClose: 2000,
+        ariaLive: "assertive", // Stronger accessibility notice
+        draggable: true,
+        closeButton: true,
+        hideProgressBar: false,
+      });
+    }
+  };
 
   if (isLoading)
     return (
@@ -59,7 +86,7 @@ function Products() {
 
             <p className="text-[14px]">{product.description}</p>
             <button
-              onClick={() => dispatch(addToCart(product))}
+              onClick={() => handleAddToCart(product)}
               className="w-full bg-gray-900 font-semibold text-slate-50 px-5 py-2 rounded-full hover:bg-gray-800 transition-all duration-200"
             >
               Add To Cart

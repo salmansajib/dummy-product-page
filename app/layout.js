@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "./providers";
 import { QueryProvider } from "@/components/QueryProvier";
 import Header from "@/components/Header";
+import ToastProvider from "@/components/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       >
         <QueryProvider>
           <Providers>
+            <ToastProvider />
             <Header />
             {children}
           </Providers>
